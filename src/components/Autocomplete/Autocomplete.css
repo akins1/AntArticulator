@@ -1,0 +1,148 @@
+
+.inputContainer {
+    display: flex;
+    width: calc(100% + 50px);
+    position: relative;
+
+}
+
+.inputBox {  
+    background: #ffffff;
+    border: none;
+    padding: 8px;
+    border-radius: 2px;
+    outline: none;
+    font-family: inherit;
+    /* // -webkit-box-sizing: border-box;
+    // -moz-box-sizing: border-box;
+    // -o-box-sizing: border-box;
+    // -ms-box-sizing: border-box; */
+    width: 100%;
+    font-size: 1rem;
+    -webkit-box-sizing: border-box;
+    transition: .1s;
+    letter-spacing: normal;
+}
+
+.inputBox:focus {
+    background: rgb(242, 234, 255);
+}
+
+
+
+.inputButtons {
+    display: flex;
+    position: relative;
+    right: 55px;
+}
+
+.inputButtonCancel {
+    
+    position: relative;
+    margin: auto;
+    /* right: 51px; */
+    width: 22px;
+    height: 22px;
+    /* background-color: blueviolet; */
+    border-radius: 2px;
+    color: rgb(156, 156, 156);
+    /* user-select: none; */
+    border: none;
+    /* background: transparent; */
+    transition: 0.1s;
+    cursor: pointer;
+}
+
+.inputButtonCancel:hover {
+    
+    color: rgb(112, 112, 112);
+}
+
+.inputButtonArrow {
+    position: relative;
+    margin: auto;
+    /* right: 47px; */
+    width: 22px;
+    height: 22px;
+    /* background-color: rgb(255, 255, 255); */
+    border-radius: 2px;
+    color: rgb(156, 156, 156);
+    transition: 0.1s;
+    /* user-select: none; */
+    /* background: transparent; */
+    cursor: pointer;
+    
+}
+
+.inputButtonArrow:hover {
+    
+    color: rgb(112, 112, 112);
+}
+
+.inputDiv {
+    position: relative;
+    margin: auto;
+    /* right: 49px; */
+    height: 22px;
+    width: 1px;
+    background-color: rgb(190, 190, 190);
+    border-radius: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+/* .inputContainer > .optionsContainer {
+    position: absolute;
+    background-color: #ffffff;
+    border: solid 2px rgb(234, 220, 255);
+    border-radius: 5px;
+    width: 100%;
+} */
+
+.optionsContainer {
+    box-sizing: content-box;
+    position: absolute;
+    background-color: #ffffff;
+    outline: solid 1px rgb(177, 177, 177);
+    border-radius: 2px;
+    width: calc(100% - 50px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    font-family: inherit;
+    max-height: 300px;
+    overflow: scroll;
+    margin-top: 5px;
+}
+
+
+.listElement {
+    list-style-type: none;
+    font-size: 1rem;
+    padding: 7px;
+    cursor: pointer;
+    /* transition: 0.1s; */
+    
+}
+
+.listElement:hover {
+    background-color: rgb(247, 242, 255);
+}
+
+.listElement + .listElement {
+    border-top: solid 1px rgb(236, 236, 236);
+}
+
+.noResultsListElement {
+    list-style-type: none;
+    font-size: 1em;
+    padding: 12px;
+    font-weight: 500;
+    cursor: default;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(114, 114, 114);
+}
+
+.highlightedText {
+    display: inline-flex;
+    font-weight: 600;
+}
